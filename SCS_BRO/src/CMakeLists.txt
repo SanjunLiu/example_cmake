@@ -1,0 +1,21 @@
+## src files
+SET(TEST_SRC test.cpp)
+
+
+##include directories
+set (SRC_INCLUDE_DIR ${INC_DIR})
+
+##link_directories
+set (SRC_LINK_DIR ${PROJECT_SOURCE_DIR}/lib)
+
+##link_libraries
+
+INCLUDE_DIRECTORIES(${SRC_INCLUDE_DIR})
+#LINK_DIRECTORIES(${SRC_LINK_DIR})
+if (USE_STATIC)
+    ADD_LIBRARY(${TEST_LIB_NAME} STATIC ${TEST_SRC})
+else()
+    ADD_LIBRARY(${TEST_LIB_NAME} SHARED ${TEST_SRC})
+endif()
+
+#TARGET_LINK_LIBRARIES(${TEST_LIB_NAME} ${SRC_LINK_LIB})
