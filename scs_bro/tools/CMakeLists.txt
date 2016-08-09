@@ -3,6 +3,8 @@ project (my_tools)
 
 set(TEST_TOOLS_SRC
     img2bin
+    readtxt2console
+    readbin2console
     )
 
 #set(EXCUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)

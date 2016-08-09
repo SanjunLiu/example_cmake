@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/liusanjun/example_cmake/scs_bro/tools/printbinarydata.cpp
+tools.hpp
+/home/liusanjun/example_cmake/scs_bro/tools/tools.hpp
+
+/home/liusanjun/example_cmake/scs_bro/tools/tools.hpp
+iostream
+-
+string
+-
+string.h
+-
+iomanip
+-
+cmath
+-
+assert.h
+-
+ctime
+-
+
