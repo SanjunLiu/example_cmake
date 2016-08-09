@@ -1,4 +1,0 @@
-/home/liusanjun/example_cmake/scs_bro/build/tools/CMakeFiles/img2bin.dir
-/home/liusanjun/example_cmake/scs_bro/build/tools/CMakeFiles/readbin2console.dir
-/home/liusanjun/example_cmake/scs_bro/build/tools/CMakeFiles/readtxt2console.dir
-/home/liusanjun/example_cmake/scs_bro/build/src/CMakeFiles/test_linux_x86_64.dir

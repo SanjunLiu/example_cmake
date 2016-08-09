@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC  -O3 -fPIC -fopenmp  -std=c++11   -shared -Wl,-soname,libtest_linux_x86_64.so -o ../lib/libtest_linux_x86_64.so CMakeFiles/test_linux_x86_64.dir/test.cpp.o 
