@@ -1,6 +1,6 @@
 # Build outputs
-build-*
-.idea
+scs_bro/build/*
+scs_bro/.idea
 
 # ctags
 tags

@@ -37,16 +37,16 @@ static int gettimeofday(struct timeval *tp, void *tzp) {
     struct timeval __timing_start, __timing_end; \
     gettimeofday(&__timing_start, NULL);
 
-#define __TOC__()                                                        \
-    do {                                                             \
-        gettimeofday(&__timing_end, NULL);                       \
+#define __TOC__()                                      \
+    do {                                               \
+        gettimeofday(&__timing_end, NULL);             \
         double __timing_gap = (__timing_end.tv_sec -     \
                            __timing_start.tv_sec) *  \
                           1000.0 +                     \
                       (__timing_end.tv_usec -    \
                            __timing_start.tv_usec) / \
                           1000.0;                    \
-        fprintf(stdout, "TIME(ms): %lf\n", __timing_gap);        \
+        fprintf(stdout, "TIME(ms): %lf\n", __timing_gap);   \
     } while (0)
 
 #endif
