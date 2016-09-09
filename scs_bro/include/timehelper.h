@@ -26,6 +26,14 @@ static int gettimeofday(struct timeval *tp, void *tzp) {
     tp->tv_usec = wtm.wMilliseconds * 1000;
     return (0);
 }
+#define __TIC__() double __timing_start = clock()
+#define __TOC__()                                                 \
+    do {                                                      \
+        double __timing_end = clock();            \
+        fprintf(stdout, "TIME(ms): %lf\n",                \
+            (__timing_end - __timing_start)   \
+                / CLOCKS_PER_SEC * 1000);         \
+    } while (0)
 
 #else
 #include <unistd.h>
@@ -51,4 +59,4 @@ static int gettimeofday(struct timeval *tp, void *tzp) {
 
 #endif
 
-#endif /* end of include guard: IMAGEHELPER_HPP_*/
+#endif /* end TIME_HELPER_H_*/
